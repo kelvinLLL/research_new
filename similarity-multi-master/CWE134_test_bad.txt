@@ -1,0 +1,136 @@
+
+#VAR1 "VAR2.VAR3"
+#VAR1 <VAR4>
+
+#VAR5 VAR6
+#VAR1 <VAR7.VAR3>
+#VAR8
+
+#VAR9 VAR6
+#VAR1 <VAR10.VAR3>
+#VAR1 <VAR11.VAR3>
+#VAR1 <VAR12.VAR3>
+#VAR13 FUN1(VAR14, "ws2_32") 
+#define VAR15 VAR16
+#else 
+#VAR1 <VAR17/VAR18.VAR3>
+#VAR1 <VAR17/VAR19.VAR3>
+#VAR1 <VAR20/VAR21.VAR3>
+#VAR1 <VAR22/VAR23.VAR3>
+#VAR1 <VAR24.VAR3>
+#define VAR25 -1
+#define VAR26 -1
+#define VAR15 close
+#define VAR27 int
+#VAR8
+
+#define VAR28 27015
+#define VAR29 "127.0.0.1"
+
+using namespace VAR30;
+
+namespace VAR31
+{
+
+
+
+void FUN2(VAR4<wchar_t *> VAR32);
+
+void FUN3()
+{
+    wchar_t * VAR33;
+    VAR4<wchar_t *> VAR32;
+    wchar_t VAR34[100] = VAR35"";
+    VAR33 = VAR34;
+    {
+#VAR9 VAR6
+        VAR36 VAR37;
+        int VAR38 = 0;
+#VAR8
+        int VAR39;
+        struct CLASS1 VAR40;
+        wchar_t *VAR41;
+        VAR27 VAR42 = VAR25;
+        size_t VAR43 = FUN4(VAR33);
+        do
+        {
+#VAR9 VAR6
+            if (FUN5(FUN6(2,2), &VAR37) != VAR44)
+            {
+                break;
+            }
+            VAR38 = 1;
+#VAR8
+            
+            VAR42 = VAR19(VAR45, VAR46, VAR47);
+            if (VAR42 == VAR25)
+            {
+                break;
+            }
+            memset(&VAR40, 0, sizeof(VAR40));
+            VAR40.VAR48 = VAR45;
+            VAR40.VAR49.VAR50 = FUN7(VAR29);
+            VAR40.VAR51 = FUN8(VAR28);
+            if (FUN9(VAR42, (struct CLASS2*)&VAR40, sizeof(VAR40)) == VAR26)
+            {
+                break;
+            }
+            
+            VAR39 = FUN10(VAR42, (char *)(VAR33 + VAR43), sizeof(wchar_t) * (100 - VAR43 - 1), 0);
+            if (VAR39 == VAR26 || VAR39 == 0)
+            {
+                break;
+            }
+            
+            VAR33[VAR43 + VAR39 / sizeof(wchar_t)] = '\';
+            
+            VAR41 = FUN11(VAR33, '\');
+            if (VAR41)
+            {
+                *VAR41 = '\';
+            }
+            VAR41 = FUN11(VAR33, '\');
+            if (VAR41)
+            {
+                *VAR41 = '\';
+            }
+        }
+        while (0);
+        if (VAR42 != VAR25)
+        {
+            VAR15(VAR42);
+        }
+#VAR9 VAR6
+        if (VAR38)
+        {
+            FUN12();
+        }
+#VAR8
+    }
+    
+    VAR32.FUN13(VAR32.FUN14(), 1, VAR33);
+    VAR32.FUN13(VAR32.FUN14(), 1, VAR33);
+    VAR32.FUN13(VAR32.FUN14(), 1, VAR33);
+    FUN2(VAR32);
+}
+
+
+
+} 
+
+
+#VAR9 VAR52
+
+using namespace VAR31; 
+
+int main(int VAR53, char * VAR54[])
+{
+    
+    srand( (unsigned)time(VAR55) );
+    FUN15("VAR56 FUN3()...");
+    FUN3();
+    FUN15("VAR57 FUN3()");
+    return 0;
+}
+
+#VAR8

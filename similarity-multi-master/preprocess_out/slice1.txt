@@ -1,0 +1,50 @@
+    int VAR55;
+    int VAR64;
+    size_t VAR65, VAR66;
+    VAR11->VAR50 = VAR67->VAR50;
+    VAR64 = 2 << (((VAR67->VAR39 & 0x80) ? VAR67->VAR39 : VAR67->VAR28) & 7);
+    VAR65 = (size_t)VAR64 * 3;
+    if (VAR11->VAR68 == VAR69) {
+        VAR11->VAR68 = (unsigned char *)FUN6(VAR11->VAR70, VAR65);
+    } else if (VAR11->VAR64 < VAR64) {
+        FUN7(VAR11->VAR70, VAR11->VAR68);
+        VAR11->VAR68 = (unsigned char *)FUN6(VAR11->VAR70, VAR65);
+    if (VAR11->VAR68 == VAR69) {
+            "FUN5: FUN6() VAR71.");
+    VAR11->VAR64 = VAR64;
+    if (VAR11->VAR64 <= VAR73 && VAR74) {
+        VAR11->VAR75 = VAR76;
+        FUN7(VAR11->VAR70, VAR11->VAR77);
+        VAR66 = (size_t)VAR11->VAR78 * (size_t)VAR11->VAR79;
+        VAR11->VAR77 = (unsigned char *)FUN6(VAR11->VAR70, VAR66);
+        if (VAR11->VAR77 == VAR69) {
+                "FUN6() VAR71 VAR80 FUN5().");
+        memcpy(VAR11->VAR77, VAR67->VAR27, VAR66);
+        for (VAR55 = 0; VAR55 < VAR11->VAR64; ++VAR55) {
+            VAR11->VAR68[VAR55 * 3 + 0] = VAR67->VAR36[VAR55 * 3 + 2];
+            VAR11->VAR68[VAR55 * 3 + 1] = VAR67->VAR36[VAR55 * 3 + 1];
+            VAR11->VAR68[VAR55 * 3 + 2] = VAR67->VAR36[VAR55 * 3 + 0];
+        if (VAR67->VAR39 & 0x80) {
+            if (VAR67->VAR32 & 0x01) {
+                if (VAR81) {
+                    VAR11->VAR68[VAR67->VAR31 * 3 + 0] = VAR81[0];
+                    VAR11->VAR68[VAR67->VAR31 * 3 + 1] = VAR81[1];
+                    VAR11->VAR68[VAR67->VAR31 * 3 + 2] = VAR81[2];
+                    VAR11->VAR31 = VAR67->VAR31;
+        } else if (VAR67->VAR28 & 0x80) {
+            if (VAR67->VAR32 & 0x01) {
+                if (VAR81) {
+                    VAR11->VAR68[VAR67->VAR31 * 3 + 0] = VAR81[0];
+                    VAR11->VAR68[VAR67->VAR31 * 3 + 1] = VAR81[1];
+                    VAR11->VAR68[VAR67->VAR31 * 3 + 2] = VAR81[2];
+                    VAR11->VAR31 = VAR67->VAR31;
+        VAR11->VAR75 = VAR82;
+        VAR66 = (size_t)VAR67->VAR26 * (size_t)VAR67->VAR3 * 3;
+        VAR11->VAR77 = (unsigned char *)FUN6(VAR11->VAR70, VAR66);
+        if (VAR11->VAR77 == VAR69) {
+                "FUN6() VAR71 VAR80 FUN5().");
+        for (VAR55 = 0; VAR55 < VAR67->VAR26 * VAR67->VAR3; ++VAR55) {
+            VAR11->VAR77[VAR55 * 3 + 0] = VAR67->VAR36[VAR67->VAR27[VAR55] * 3 + 2];
+            VAR11->VAR77[VAR55 * 3 + 1] = VAR67->VAR36[VAR67->VAR27[VAR55] * 3 + 1];
+            VAR11->VAR77[VAR55 * 3 + 2] = VAR67->VAR36[VAR67->VAR27[VAR55] * 3 + 0];
+    VAR11->VAR83 = (VAR67->VAR49 != (-1));

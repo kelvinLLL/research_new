@@ -1,0 +1,174 @@
+
+#VAR1 <VAR2.VAR3>
+#VAR1 "VAR4.VAR3"
+
+#VAR5 VAR6
+#VAR1 <VAR7.VAR3>
+#VAR8
+
+#VAR9 VAR6
+#VAR1 <VAR10.VAR3>
+#VAR1 <VAR11.VAR3>
+#VAR1 <VAR12.VAR3>
+#VAR13 FUN1(VAR14, "ws2_32") 
+#define VAR15 VAR16
+#else 
+#VAR1 <VAR17/VAR18.VAR3>
+#VAR1 <VAR17/VAR19.VAR3>
+#VAR1 <VAR20/VAR21.VAR3>
+#VAR1 <VAR22/VAR23.VAR3>
+#VAR1 <VAR24.VAR3>
+#define VAR25 -1
+#define VAR26 -1
+#define VAR15 close
+#define VAR27 int
+#VAR8
+
+#define VAR28 27015
+#define VAR29 "127.0.0.1"
+
+typedef union
+{
+    char * VAR30;
+    char * VAR31;
+} CLASS1;
+
+
+
+
+static void FUN2(char * VAR32, ...)
+{
+    {
+        VAR33 VAR34;
+        FUN3(VAR34, VAR32);
+        
+        vprintf(VAR32, VAR34);
+        FUN4(VAR34);
+    }
+}
+
+static void FUN5()
+{
+    char * VAR32;
+    CLASS1 VAR35;
+    char VAR36[100] = "";
+    VAR32 = VAR36;
+    
+    strcpy(VAR32, "fixedstringtest");
+    VAR35.VAR30 = VAR32;
+    {
+        char * VAR32 = VAR35.VAR31;
+        FUN2(VAR32, VAR32);
+    }
+}
+
+
+static void FUN6(char * VAR32, ...)
+{
+    {
+        VAR33 VAR34;
+        FUN3(VAR34, VAR32);
+        
+        vprintf("%s", VAR34);
+        FUN4(VAR34);
+    }
+}
+
+static void FUN7()
+{
+    char * VAR32;
+    CLASS1 VAR35;
+    char VAR36[100] = "";
+    VAR32 = VAR36;
+    {
+#VAR9 VAR6
+        VAR37 VAR38;
+        int VAR39 = 0;
+#VAR8
+        int VAR40;
+        struct CLASS2 VAR41;
+        char *VAR42;
+        VAR27 VAR43 = VAR25;
+        size_t VAR44 = strlen(VAR32);
+        do
+        {
+#VAR9 VAR6
+            if (FUN8(FUN9(2,2), &VAR38) != VAR45)
+            {
+                break;
+            }
+            VAR39 = 1;
+#VAR8
+            
+            VAR43 = VAR19(VAR46, VAR47, VAR48);
+            if (VAR43 == VAR25)
+            {
+                break;
+            }
+            memset(&VAR41, 0, sizeof(VAR41));
+            VAR41.VAR49 = VAR46;
+            VAR41.VAR50.VAR51 = FUN10(VAR29);
+            VAR41.VAR52 = FUN11(VAR28);
+            if (FUN12(VAR43, (struct CLASS3*)&VAR41, sizeof(VAR41)) == VAR26)
+            {
+                break;
+            }
+            
+            VAR40 = FUN13(VAR43, (char *)(VAR32 + VAR44), sizeof(char) * (100 - VAR44 - 1), 0);
+            if (VAR40 == VAR26 || VAR40 == 0)
+            {
+                break;
+            }
+            
+            VAR32[VAR44 + VAR40 / sizeof(char)] = '\';
+            
+            VAR42 = strchr(VAR32, '\');
+            if (VAR42)
+            {
+                *VAR42 = '\';
+            }
+            VAR42 = strchr(VAR32, '\');
+            if (VAR42)
+            {
+                *VAR42 = '\';
+            }
+        }
+        while (0);
+        if (VAR43 != VAR25)
+        {
+            VAR15(VAR43);
+        }
+#VAR9 VAR6
+        if (VAR39)
+        {
+            FUN14();
+        }
+#VAR8
+    }
+    VAR35.VAR30 = VAR32;
+    {
+        char * VAR32 = VAR35.VAR31;
+        FUN6(VAR32, VAR32);
+    }
+}
+
+void FUN15()
+{
+    FUN5();
+    FUN7();
+}
+
+
+#VAR9 VAR53
+
+int main(int VAR54, char * VAR55[])
+{
+    
+    srand( (unsigned)time(VAR56) );
+    FUN16("VAR57 FUN17()...");
+    FUN15();
+    FUN16("VAR58 FUN17()");
+    return 0;
+}
+
+#VAR8

@@ -1,0 +1,49 @@
+FUN4(
+FUN5(
+            "FUN5: FUN6() VAR71.");
+                "FUN6() VAR71 VAR80 FUN5().");
+                "FUN6() VAR71 VAR80 FUN5().");
+FUN12(
+    CLASS1 VAR53;
+    CLASS3 CLASS4;
+    VAR57 VAR58 = VAR59;
+    VAR63 *VAR11;
+    CLASS5 VAR121;
+    VAR121.VAR94 = VAR123;
+    VAR58 = FUN16(&VAR11, VAR70);
+    if (FUN13(VAR58)) {
+    VAR53.VAR19 = VAR53.VAR21 = (unsigned char *)VAR103;
+    VAR53.VAR20 = (unsigned char *)VAR103 + VAR97;
+    memset(&CLASS4, 0, sizeof(CLASS4));
+    CLASS4.VAR50 = VAR124;
+    VAR58 = FUN4(&VAR53, &CLASS4);
+    if (VAR58 != VAR62) {
+    CLASS4.VAR27 = (unsigned char *)FUN6(VAR70, (size_t)CLASS4.VAR26 * (size_t)CLASS4.VAR3);
+    if (CLASS4.VAR27 == VAR69) {
+                "FUN15: FUN6() VAR71. VAR97=%zu.",
+                (size_t)CLASS4.VAR42 * (size_t)CLASS4.VAR43);
+        VAR58 = VAR72;
+    VAR11->VAR49 = 0;
+        VAR11->VAR125 = 0;
+        VAR53.VAR19 = VAR53.VAR21;
+        VAR58 = FUN4(&VAR53, &CLASS4);
+        if (VAR58 != VAR62) {
+        CLASS4.VAR52 = 0;
+            VAR58 = FUN12(&VAR53, &CLASS4, VAR81);
+            if (VAR58 != VAR62) {
+            if (CLASS4.VAR52) {
+            VAR11->VAR78 = CLASS4.VAR46;
+            VAR11->VAR79 = CLASS4.VAR47;
+            VAR58 = FUN5(VAR11, &CLASS4, VAR81, VAR73, VAR74);
+            if (VAR58 != VAR62) {
+            VAR58 = VAR121.VAR119(VAR11, VAR126);
+            if (VAR58 != VAR62) {
+            ++VAR11->VAR125;
+        ++VAR11->VAR49;
+        if (CLASS4.VAR49 < 0) {
+        if (VAR128 == VAR129 || VAR11->VAR125 == 1) {
+        if (VAR128 == VAR130) {
+            if (VAR11->VAR49 == CLASS4.VAR49) {
+    FUN7(VAR11->VAR70, CLASS4.VAR27);
+    FUN17(VAR11);
+    return VAR58;

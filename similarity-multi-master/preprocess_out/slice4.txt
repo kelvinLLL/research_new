@@ -1,0 +1,84 @@
+    VAR57 VAR58 = VAR59;
+    unsigned char VAR103[256];
+    unsigned char VAR104;
+    int VAR105;
+    int VAR106;
+    int VAR26;
+    int VAR3;
+    int VAR86;
+        switch ((VAR104 = FUN1(VAR53))) {
+            VAR105 = FUN2(VAR53);  
+            VAR106 = FUN2(VAR53);  
+            VAR26 = FUN2(VAR53);  
+            VAR3 = FUN2(VAR53);  
+            if (VAR105 >= CLASS4->VAR26 || VAR106 >= CLASS4->VAR3 || VAR105 + VAR26 > CLASS4->VAR26 || VAR106 + VAR3 > CLASS4->VAR3) {
+                    "VAR99 FUN11 (VAR100: VAR107 VAR108 VAR109).");
+                VAR58 = VAR98;
+            CLASS4->VAR48 = CLASS4->VAR26;
+            CLASS4->VAR40 = VAR105;
+            CLASS4->VAR41 = VAR106;
+            CLASS4->VAR42   = CLASS4->VAR40 + VAR26;
+            CLASS4->VAR43   = CLASS4->VAR41 + VAR3;
+            CLASS4->VAR44   = CLASS4->VAR40;
+            CLASS4->VAR45   = CLASS4->VAR41;
+            CLASS4->VAR46   = CLASS4->VAR40;
+            CLASS4->VAR47   = CLASS4->VAR41;
+            CLASS4->VAR39 = FUN1(VAR53);
+            if (CLASS4->VAR39 & 0x40) {
+                CLASS4->VAR38 = 8; 
+                CLASS4->VAR37 = 3;
+                CLASS4->VAR38 = 1;
+                CLASS4->VAR37 = 0;
+            if (CLASS4->VAR39 & 0x80) {
+                FUN3(VAR53,
+                                     CLASS4->VAR34,
+                                     2 << (CLASS4->VAR39 & 7));
+                CLASS4->VAR36 = (unsigned char *) CLASS4->VAR34;
+            } else if (CLASS4->VAR28 & 0x80) {
+                if (CLASS4->VAR31 >= 0 && (CLASS4->VAR32 & 0x01)) {
+                   if (VAR81) {
+                       CLASS4->VAR33[CLASS4->VAR31][0] = VAR81[2];
+                       CLASS4->VAR33[CLASS4->VAR31][1] = VAR81[1];
+                       CLASS4->VAR33[CLASS4->VAR31][2] = VAR81[0];
+                CLASS4->VAR36 = (unsigned char *)CLASS4->VAR33;
+                    "VAR99 FUN11 (VAR100: VAR110 VAR111 VAR112).");
+                VAR58 = VAR98;
+            VAR58 = FUN10(VAR53, CLASS4);
+            if (FUN13(VAR58)) {
+            switch (FUN1(VAR53)) {
+                VAR86 = FUN1(VAR53); 
+                if (VAR86 == 4) {
+                    CLASS4->VAR32 = FUN1(VAR53);
+                    CLASS4->VAR50 = FUN2(VAR53); 
+                    CLASS4->VAR31 = FUN1(VAR53);
+                    if (VAR53->VAR19 + VAR86 > VAR53->VAR20) {
+                        VAR58 = VAR98;
+                    VAR53->VAR19 += VAR86;
+                VAR86 = FUN1(VAR53);  
+                if (VAR53->VAR19 + VAR86 > VAR53->VAR20) {
+                    VAR58 = VAR98;
+                memcpy(VAR103, VAR53->VAR19, (size_t)VAR86);
+                VAR53->VAR19 += VAR86;
+                VAR103[VAR86] = 0;
+                if (VAR86 == 11 && strcmp((char *)VAR103, "VAR113.0") == 0) {
+                    if (FUN1(VAR53) == 0x03) {
+                        switch (FUN1(VAR53)) {
+                            CLASS4->VAR49 = 1;
+                            CLASS4->VAR49 = FUN2(VAR53);
+                            CLASS4->VAR49 = 1;
+                VAR86 = FUN1(VAR53);  
+                if (VAR53->VAR19 + VAR86 > VAR53->VAR20) {
+                    VAR58 = VAR98;
+                memcpy(VAR103, VAR53->VAR19, (size_t)VAR86);
+                VAR53->VAR19 += VAR86;
+            if ((VAR104 = FUN1(VAR53)) != 0x00) {
+                sprintf((char *)VAR103, "VAR110 VAR114 VAR115 FUN14 (VAR116 VAR84 %02x).", VAR104);
+                FUN8((char *)VAR103);
+                VAR58 = VAR98;
+            CLASS4->VAR52 = 1;
+            VAR58 = VAR62;
+            sprintf((char *)VAR103, "VAR99 FUN11 (VAR100: VAR116 VAR84 %02x).", VAR104);
+            FUN8((char *)VAR103);
+            VAR58 = VAR98;
+    VAR58 = VAR62;
+    return VAR58;

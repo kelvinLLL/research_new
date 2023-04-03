@@ -1,0 +1,4 @@
+void FUN1(int * VAR1)
+        int VAR2[100] = {0}; 
+        memmove(VAR1, VAR2, 100*sizeof(int));
+        FUN2(VAR1[0]);
